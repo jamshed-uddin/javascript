@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://kit.fontawesome.com/05e1db3a4f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center my-12 text-4xl font-semibold">Text Editor</h1>
+    <div class=" w-4/5 lg:w-3/4 mx-auto p-3 ">
+        <div class=" w-4/5 lg:w-3/4 mx-auto p-3 ">
+            <div class=" flex flex-col md:flex-row gap-3 text-center justify-evenly">
+                <div>
+                    <button id="bold-btn" onclick="bold()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><strong>B</strong></button>
+                    <button id="italic-btn" onclick="italic()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 mx-1 transition duration-150 rounded italic"><strong>I</strong></button>
+                    <button id="underline-btn" onclick="underline()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 mx-1 transition duration-150 rounded underline"><strong>U</strong></button>
+                </div>
+                <div>
+                    <button id="left-btn" onclick="left()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><i
+                            class="fa-solid fa-align-left"></i></button>
+                    <button id="center-btn" onclick="center()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><i
+                            class="fa-solid fa-align-center"></i></button>
+                    <button id="right-btn" onclick="right()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><i
+                            class="fa-solid fa-align-right"></i></button>
+                    <button id="justify-btn" onclick="justify()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><i
+                            class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div>
+                    <button id="capital-btn" onclick="capital()"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded mx-1"><strong>aA</strong></button>
+                    <input id="font-size" onclick="fontSize()" type="number" inputmode="numeric" min="1" max="100"
+                        value="16" class="border border-black w-12 h-8 rounded mx-1">
+                    <input type="color" id="font-color" class="rounded w-10 h-8 py-1 px-1 mx-1 border border-black"
+                        onclick="fontColor()">
+
+                    <button id="clear-btn"
+                        class="border border-black hover:bg-blue-300 py-1 px-3 transition duration-150 rounded px-2 mx-1"><strong><i
+                                class="fa-solid fa-retweet"></i></strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="p-5">
+            <textarea class="border-2 border-black resize-none w-full h-52   text-inherit rounded-xl p-3" name=""
+                id="textarea" placeholder="Your Text Here"></textarea>
+        </div>
+    </div>
+
+    <script src="js/index.js
+    "></script>
+</body>
+
+</html>
