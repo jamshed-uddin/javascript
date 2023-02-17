@@ -26,12 +26,6 @@ function quantityDecrease(elementId) {
   const currentPhoneQuantity = previousPhoneQuantity - 1;
   phoneQuantityElement.value = currentPhoneQuantity;
   return currentPhoneQuantity;
-
-  //   if ((phoneQuantityElement.value = 1)) {
-  //     document.getElementById("phone-btn-minus").setAttribute("disabled", "");
-  //   } else {
-  //     document.getElementById("phone-btn-minus").removeAttribute("disabled", "");
-  //   }
 }
 
 // function to calculate subtotal
@@ -56,18 +50,13 @@ function calculateTaxAndFinalTotal() {
   setElemetnInnerText("total", finalTotal);
 }
 
-// clear button
-
-const classes = document.querySelectorAll(".remove-item");
-
-for (const x of classes) {
-  x.addEventListener("click", function () {
-    document.getElementById("phone-quantity").value = 1;
-    document.getElementById("phonecase-quantity").value = 1;
-    const classInnerTextReset = (document.getElementById(
-      "phone-price"
-    ).innerText = 1219);
-    document.getElementById("phonecase-price").innerText = 59;
-    calculateTaxAndFinalTotal();
-  });
-}
+// function disableMinusButton(inputFieldId) {
+//   const inputValue = document.getElementById(inputFieldId).value;
+//   if ((inputValue = 1)) {
+//     document.getElementById("phone-btn-minus").setAttribute("disabled", "");
+//   } else {
+//     document
+//       .getElementById("phone-btn-minus")
+//       .removeAttribute("disabled", true);
+//   }
+// }
